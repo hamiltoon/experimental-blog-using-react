@@ -19,7 +19,6 @@ const CreateBlogPostForm = () => {
 
   const onSubmit = ({ ...values }: BlogPost) => {
     return postPost(values).then((newPost) => {
-      console.log({ newPost })
       if (newPost.type === 'SUCCESS') history.push(`/post/${newPost.data.id}`)
     })
   }
