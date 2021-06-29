@@ -1,7 +1,7 @@
 import React from 'react'
-import { TextArea, Form } from 'semantic-ui-react'
+import { TextArea, Form, FormTextAreaProps } from 'semantic-ui-react'
 
-const TextAreaFormField = ({ input, meta, label }: any) => {
+const TextAreaFormField = ({ input, meta, label }: FormTextAreaProps) => {
   return (
     <Form.Field
       error={

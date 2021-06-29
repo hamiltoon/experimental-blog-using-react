@@ -1,7 +1,7 @@
 import React from 'react'
-import { Input, Form } from 'semantic-ui-react'
+import { Input, Form, FormFieldProps } from 'semantic-ui-react'
 
-const InputFormField = ({ input, meta, label }: any) => {
+const InputFormField = ({ input, meta, label }: FormFieldProps) => {
   return (
     <Form.Field
       error={
